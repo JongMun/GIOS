@@ -1,24 +1,237 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="GIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="scr-IP-eU1">
+                                <rect key="frame" x="0.0" y="40" width="414" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="imp-yA-ddU"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vN-eI-n08" customClass="CustomButton" customModule="GIOS" customModuleProvider="target">
+                                <rect key="frame" x="10" y="340" width="394" height="60"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="krZ-45-HKk" kind="show" id="E79-RZ-8Lc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9C4-ib-7Xc" customClass="CustomButton" customModule="GIOS" customModuleProvider="target">
+                                <rect key="frame" x="10" y="420" width="394" height="60"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPH-O9-Tdd" customClass="CustomButton" customModule="GIOS" customModuleProvider="target">
+                                <rect key="frame" x="10" y="500" width="394" height="60"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJo-7r-ByM" customClass="CustomButton" customModule="GIOS" customModuleProvider="target">
+                                <rect key="frame" x="10" y="580" width="394" height="60"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPR-Zk-1HN" customClass="CustomButton" customModule="GIOS" customModuleProvider="target">
+                                <rect key="frame" x="10" y="660" width="394" height="60"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DxO-rt-NYP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="scr-IP-eU1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="ARQ-KP-Jj9"/>
+                            <constraint firstItem="DxO-rt-NYP" firstAttribute="trailing" secondItem="RPH-O9-Tdd" secondAttribute="trailing" constant="10" id="EGm-hd-HeO"/>
+                            <constraint firstItem="DxO-rt-NYP" firstAttribute="trailing" secondItem="mPR-Zk-1HN" secondAttribute="trailing" constant="10" id="NJB-Uu-vOv"/>
+                            <constraint firstItem="1vN-eI-n08" firstAttribute="leading" secondItem="DxO-rt-NYP" secondAttribute="leading" constant="10" id="PER-sr-388"/>
+                            <constraint firstItem="DxO-rt-NYP" firstAttribute="trailing" secondItem="BJo-7r-ByM" secondAttribute="trailing" constant="10" id="QY5-FG-6ma"/>
+                            <constraint firstItem="DxO-rt-NYP" firstAttribute="trailing" secondItem="1vN-eI-n08" secondAttribute="trailing" constant="10" id="V2W-48-X9B"/>
+                            <constraint firstItem="9C4-ib-7Xc" firstAttribute="top" secondItem="1vN-eI-n08" secondAttribute="bottom" constant="20" id="VaA-YA-c6r"/>
+                            <constraint firstItem="RPH-O9-Tdd" firstAttribute="top" secondItem="9C4-ib-7Xc" secondAttribute="bottom" constant="20" id="Vxo-9g-usf"/>
+                            <constraint firstItem="BJo-7r-ByM" firstAttribute="top" secondItem="RPH-O9-Tdd" secondAttribute="bottom" constant="20" id="ZY3-lK-VJR"/>
+                            <constraint firstItem="mPR-Zk-1HN" firstAttribute="top" secondItem="BJo-7r-ByM" secondAttribute="bottom" constant="20" id="bDg-wQ-Mja"/>
+                            <constraint firstItem="1vN-eI-n08" firstAttribute="top" secondItem="scr-IP-eU1" secondAttribute="bottom" constant="50" id="ben-rz-RkI"/>
+                            <constraint firstItem="mPR-Zk-1HN" firstAttribute="leading" secondItem="DxO-rt-NYP" secondAttribute="leading" constant="10" id="bfL-R3-tC9"/>
+                            <constraint firstItem="BJo-7r-ByM" firstAttribute="leading" secondItem="DxO-rt-NYP" secondAttribute="leading" constant="10" id="c7N-Fc-Mps"/>
+                            <constraint firstAttribute="trailing" secondItem="scr-IP-eU1" secondAttribute="trailing" id="o3k-FM-9jN"/>
+                            <constraint firstItem="DxO-rt-NYP" firstAttribute="trailing" secondItem="9C4-ib-7Xc" secondAttribute="trailing" constant="10" id="olx-mR-54c"/>
+                            <constraint firstItem="RPH-O9-Tdd" firstAttribute="leading" secondItem="DxO-rt-NYP" secondAttribute="leading" constant="10" id="tc2-M8-560"/>
+                            <constraint firstItem="9C4-ib-7Xc" firstAttribute="leading" secondItem="DxO-rt-NYP" secondAttribute="leading" constant="10" id="vW2-U2-Wbw"/>
+                            <constraint firstItem="scr-IP-eU1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zb0-EV-KIx"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="albumButton" destination="RPH-O9-Tdd" id="0S0-F5-YsO"/>
+                        <outlet property="cameraButton" destination="9C4-ib-7Xc" id="VHm-2i-yNe"/>
+                        <outlet property="chatButton" destination="mPR-Zk-1HN" id="blH-DM-lCA"/>
+                        <outlet property="gifImageView" destination="scr-IP-eU1" id="EtI-z7-ZVf"/>
+                        <outlet property="signButton" destination="1vN-eI-n08" id="heO-VI-uD1"/>
+                        <outlet property="weatherButton" destination="BJo-7r-ByM" id="SQd-RQ-lFM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oOZ-AM-hO7">
+            <objects>
+                <viewController id="wqS-AI-p4K" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JhU-dk-Pib">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uNk-07-d4m"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EaK-XR-Vdu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941" y="310"/>
+        </scene>
+        <!--Sign View Controller-->
+        <scene sceneID="D1Z-bz-8EF">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="krZ-45-HKk" customClass="SignViewController" customModule="GIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oau-yQ-uOz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rig-wE-NUB" customClass="CustomBoldLabel" customModule="GIOS" customModuleProvider="target">
+                                <rect key="frame" x="20" y="74" width="374" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cgf-uY-Aru" customClass="CustomTextField" customModule="GIOS" customModuleProvider="target">
+                                <rect key="frame" x="20" y="184" width="374" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G7v-sb-UeM" customClass="CustomTextField" customModule="GIOS" customModuleProvider="target">
+                                <rect key="frame" x="20" y="254" width="374" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Yq-x9-MZm" customClass="CustomButton" customModule="GIOS" customModuleProvider="target">
+                                <rect key="frame" x="20" y="339" width="374" height="50"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKp-Al-FlL" customClass="CustomButton" customModule="GIOS" customModuleProvider="target">
+                                <rect key="frame" x="20" y="409" width="374" height="50"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhF-Wt-a13" customClass="CustomButton" customModule="GIOS" customModuleProvider="target">
+                                <rect key="frame" x="20" y="549" width="374" height="50"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWa-Gh-LvO" customClass="CustomButton" customModule="GIOS" customModuleProvider="target">
+                                <rect key="frame" x="20" y="619" width="374" height="50"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2I-1E-PNE" customClass="CustomButton" customModule="GIOS" customModuleProvider="target">
+                                <rect key="frame" x="20" y="479" width="374" height="50"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CQr-VM-LEj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tKp-Al-FlL" firstAttribute="leading" secondItem="CQr-VM-LEj" secondAttribute="leading" constant="20" id="0aA-L8-eyk"/>
+                            <constraint firstItem="CQr-VM-LEj" firstAttribute="trailing" secondItem="DWa-Gh-LvO" secondAttribute="trailing" constant="20" id="1OS-Ih-9M6"/>
+                            <constraint firstItem="CQr-VM-LEj" firstAttribute="trailing" secondItem="tKp-Al-FlL" secondAttribute="trailing" constant="20" id="2nK-hB-nxd"/>
+                            <constraint firstItem="0Yq-x9-MZm" firstAttribute="leading" secondItem="CQr-VM-LEj" secondAttribute="leading" constant="20" id="5bz-u7-wYE"/>
+                            <constraint firstItem="Rig-wE-NUB" firstAttribute="top" secondItem="CQr-VM-LEj" secondAttribute="top" constant="30" id="617-zg-UEL"/>
+                            <constraint firstItem="0Yq-x9-MZm" firstAttribute="top" secondItem="G7v-sb-UeM" secondAttribute="bottom" constant="35" id="Adm-NC-QLO"/>
+                            <constraint firstItem="GhF-Wt-a13" firstAttribute="top" secondItem="K2I-1E-PNE" secondAttribute="bottom" constant="20" id="BGC-jY-x9a"/>
+                            <constraint firstItem="K2I-1E-PNE" firstAttribute="leading" secondItem="CQr-VM-LEj" secondAttribute="leading" constant="20" id="Du0-Xp-abs"/>
+                            <constraint firstItem="Cgf-uY-Aru" firstAttribute="leading" secondItem="CQr-VM-LEj" secondAttribute="leading" constant="20" id="FoM-dR-T2c"/>
+                            <constraint firstItem="CQr-VM-LEj" firstAttribute="trailing" secondItem="0Yq-x9-MZm" secondAttribute="trailing" constant="20" id="LSZ-eV-k95"/>
+                            <constraint firstItem="DWa-Gh-LvO" firstAttribute="top" secondItem="GhF-Wt-a13" secondAttribute="bottom" constant="20" id="Mx9-v1-uvA"/>
+                            <constraint firstItem="tKp-Al-FlL" firstAttribute="top" secondItem="0Yq-x9-MZm" secondAttribute="bottom" constant="20" id="Omt-hv-oDG"/>
+                            <constraint firstItem="Cgf-uY-Aru" firstAttribute="top" secondItem="Rig-wE-NUB" secondAttribute="bottom" constant="30" id="SkF-i6-hmo"/>
+                            <constraint firstItem="GhF-Wt-a13" firstAttribute="leading" secondItem="CQr-VM-LEj" secondAttribute="leading" constant="20" id="T0F-8X-kOw"/>
+                            <constraint firstItem="CQr-VM-LEj" firstAttribute="trailing" secondItem="Cgf-uY-Aru" secondAttribute="trailing" constant="20" id="WpD-df-Nbj"/>
+                            <constraint firstItem="Rig-wE-NUB" firstAttribute="leading" secondItem="CQr-VM-LEj" secondAttribute="leading" constant="20" id="fQT-dG-Nin"/>
+                            <constraint firstItem="DWa-Gh-LvO" firstAttribute="leading" secondItem="CQr-VM-LEj" secondAttribute="leading" constant="20" id="j5Z-jc-cut"/>
+                            <constraint firstItem="K2I-1E-PNE" firstAttribute="top" secondItem="tKp-Al-FlL" secondAttribute="bottom" constant="20" id="jMT-3B-7Va"/>
+                            <constraint firstItem="CQr-VM-LEj" firstAttribute="trailing" secondItem="G7v-sb-UeM" secondAttribute="trailing" constant="20" id="qYJ-pG-jDE"/>
+                            <constraint firstItem="CQr-VM-LEj" firstAttribute="trailing" secondItem="K2I-1E-PNE" secondAttribute="trailing" constant="20" id="rSg-PM-PYC"/>
+                            <constraint firstItem="CQr-VM-LEj" firstAttribute="trailing" secondItem="GhF-Wt-a13" secondAttribute="trailing" constant="20" id="sR1-ec-q1i"/>
+                            <constraint firstItem="G7v-sb-UeM" firstAttribute="top" secondItem="Cgf-uY-Aru" secondAttribute="bottom" constant="20" id="svf-o7-H2S"/>
+                            <constraint firstItem="G7v-sb-UeM" firstAttribute="leading" secondItem="CQr-VM-LEj" secondAttribute="leading" constant="20" id="t2o-BZ-Eyp"/>
+                            <constraint firstItem="CQr-VM-LEj" firstAttribute="trailing" secondItem="Rig-wE-NUB" secondAttribute="trailing" constant="20" id="u0I-d6-TlN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EmF-hh-dKR"/>
+                    <connections>
+                        <outlet property="emailField" destination="Cgf-uY-Aru" id="0uG-7G-w77"/>
+                        <outlet property="passwdField" destination="G7v-sb-UeM" id="mM3-OH-c9m"/>
+                        <outlet property="resetPWButton" destination="GhF-Wt-a13" id="oXT-qW-Q8i"/>
+                        <outlet property="returnMenuButton" destination="DWa-Gh-LvO" id="Kxh-K0-wu2"/>
+                        <outlet property="signInButton" destination="0Yq-x9-MZm" id="jxL-El-r92"/>
+                        <outlet property="signUpButton" destination="K2I-1E-PNE" id="vpO-ek-Nc6"/>
+                        <outlet property="snsSignInButton" destination="tKp-Al-FlL" id="UcI-QY-1Am"/>
+                        <outlet property="titleLabel" destination="Rig-wE-NUB" id="wTk-H1-kgh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="20o-Hw-LMk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942" y="-384"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="0Yq-x9-MZm">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="1vN-eI-n08">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="9C4-ib-7Xc">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="BJo-7r-ByM">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="Cgf-uY-Aru">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="DWa-Gh-LvO">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="G7v-sb-UeM">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="GhF-Wt-a13">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="K2I-1E-PNE">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="RPH-O9-Tdd">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="Rig-wE-NUB">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+        <designable name="mPR-Zk-1HN">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="tKp-Al-FlL">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

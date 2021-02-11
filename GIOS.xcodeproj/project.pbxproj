@@ -3,19 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F83FFD65025083D96BD7813 /* Pods_GIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A8907BFAA4D317DBCAAEFB /* Pods_GIOS.framework */; };
 		FF98CA1025D4EB78002C08A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98CA0F25D4EB78002C08A8 /* AppDelegate.swift */; };
 		FF98CA1225D4EB78002C08A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98CA1125D4EB78002C08A8 /* SceneDelegate.swift */; };
 		FF98CA1725D4EB78002C08A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF98CA1525D4EB78002C08A8 /* Main.storyboard */; };
 		FF98CA1925D4EB7A002C08A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF98CA1825D4EB7A002C08A8 /* Assets.xcassets */; };
 		FF98CA1C25D4EB7A002C08A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF98CA1A25D4EB7A002C08A8 /* LaunchScreen.storyboard */; };
 		FF98CA3025D4ED1D002C08A8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98CA2F25D4ED1D002C08A8 /* MenuViewController.swift */; };
+		FFB2D6C825D4F441008BD97E /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB2D6C725D4F441008BD97E /* CustomColor.swift */; };
+		FFB2D71225D507D5008BD97E /* Wemakeprice-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFB2D70F25D507D5008BD97E /* Wemakeprice-SemiBold.ttf */; };
+		FFB2D71325D507D5008BD97E /* Wemakeprice-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFB2D71025D507D5008BD97E /* Wemakeprice-Regular.ttf */; };
+		FFB2D71425D507D5008BD97E /* Wemakeprice-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFB2D71125D507D5008BD97E /* Wemakeprice-Bold.ttf */; };
+		FFB2D71725D507EC008BD97E /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB2D71625D507EC008BD97E /* CustomFont.swift */; };
+		FFB2D71D25D52B1D008BD97E /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB2D71C25D52B1D008BD97E /* SignViewController.swift */; };
+		FFB2D72125D52D0E008BD97E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB2D72025D52D0E008BD97E /* CustomButton.swift */; };
+		FFB2D72425D54887008BD97E /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB2D72325D54887008BD97E /* CustomLabel.swift */; };
+		FFB2D72725D54BAF008BD97E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB2D72625D54BAF008BD97E /* CustomTextField.swift */; };
+		FFB2D73F25D582FF008BD97E /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = FFB2D73E25D582FF008BD97E /* logo.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F4989262DD02F549DBEDF82 /* Pods-GIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIOS.release.xcconfig"; path = "Target Support Files/Pods-GIOS/Pods-GIOS.release.xcconfig"; sourceTree = "<group>"; };
+		E4A8907BFAA4D317DBCAAEFB /* Pods_GIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F98E9EE8845CB93582987AA8 /* Pods-GIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIOS.debug.xcconfig"; path = "Target Support Files/Pods-GIOS/Pods-GIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		FF98CA0C25D4EB78002C08A8 /* GIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF98CA0F25D4EB78002C08A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF98CA1125D4EB78002C08A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +38,16 @@
 		FF98CA1B25D4EB7A002C08A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF98CA1D25D4EB7A002C08A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF98CA2F25D4ED1D002C08A8 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		FFB2D6C725D4F441008BD97E /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
+		FFB2D70F25D507D5008BD97E /* Wemakeprice-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wemakeprice-SemiBold.ttf"; sourceTree = "<group>"; };
+		FFB2D71025D507D5008BD97E /* Wemakeprice-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wemakeprice-Regular.ttf"; sourceTree = "<group>"; };
+		FFB2D71125D507D5008BD97E /* Wemakeprice-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wemakeprice-Bold.ttf"; sourceTree = "<group>"; };
+		FFB2D71625D507EC008BD97E /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		FFB2D71C25D52B1D008BD97E /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		FFB2D72025D52D0E008BD97E /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		FFB2D72325D54887008BD97E /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		FFB2D72625D54BAF008BD97E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		FFB2D73E25D582FF008BD97E /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F83FFD65025083D96BD7813 /* Pods_GIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00EA016473999292A9B07276 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4A8907BFAA4D317DBCAAEFB /* Pods_GIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F34239E4CF7225BBAAA9707F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F98E9EE8845CB93582987AA8 /* Pods-GIOS.debug.xcconfig */,
+				9F4989262DD02F549DBEDF82 /* Pods-GIOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FF98CA0325D4EB78002C08A8 = {
 			isa = PBXGroup;
 			children = (
 				FF98CA0E25D4EB78002C08A8 /* GIOS */,
 				FF98CA0D25D4EB78002C08A8 /* Products */,
+				F34239E4CF7225BBAAA9707F /* Pods */,
+				00EA016473999292A9B07276 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +100,7 @@
 		FF98CA0E25D4EB78002C08A8 /* GIOS */ = {
 			isa = PBXGroup;
 			children = (
+				FFB2D74225D584E7008BD97E /* GIF */,
 				FF98CA2825D4EB99002C08A8 /* Extension */,
 				FF98CA2625D4EB90002C08A8 /* Model */,
 				FF98CA2725D4EB95002C08A8 /* View */,
@@ -71,7 +116,8 @@
 		FF98CA2425D4EB85002C08A8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FF98CA2F25D4ED1D002C08A8 /* MenuViewController.swift */,
+				FFB2D71A25D52AEC008BD97E /* Main */,
+				FFB2D71B25D52AFA008BD97E /* Sign */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -95,8 +141,56 @@
 		FF98CA2825D4EB99002C08A8 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FFB2D70E25D5079F008BD97E /* Font */,
+				FFB2D70D25D50793008BD97E /* UI */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		FFB2D70D25D50793008BD97E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FFB2D6C725D4F441008BD97E /* CustomColor.swift */,
+				FFB2D72025D52D0E008BD97E /* CustomButton.swift */,
+				FFB2D72325D54887008BD97E /* CustomLabel.swift */,
+				FFB2D72625D54BAF008BD97E /* CustomTextField.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FFB2D70E25D5079F008BD97E /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				FFB2D71125D507D5008BD97E /* Wemakeprice-Bold.ttf */,
+				FFB2D71025D507D5008BD97E /* Wemakeprice-Regular.ttf */,
+				FFB2D70F25D507D5008BD97E /* Wemakeprice-SemiBold.ttf */,
+				FFB2D71625D507EC008BD97E /* CustomFont.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		FFB2D71A25D52AEC008BD97E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FF98CA2F25D4ED1D002C08A8 /* MenuViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FFB2D71B25D52AFA008BD97E /* Sign */ = {
+			isa = PBXGroup;
+			children = (
+				FFB2D71C25D52B1D008BD97E /* SignViewController.swift */,
+			);
+			path = Sign;
+			sourceTree = "<group>";
+		};
+		FFB2D74225D584E7008BD97E /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				FFB2D73E25D582FF008BD97E /* logo.gif */,
+			);
+			path = GIF;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF98CA2025D4EB7A002C08A8 /* Build configuration list for PBXNativeTarget "GIOS" */;
 			buildPhases = (
+				5ABE9A32C567CA9516675294 /* [CP] Check Pods Manifest.lock */,
 				FF98CA0825D4EB78002C08A8 /* Sources */,
 				FF98CA0925D4EB78002C08A8 /* Frameworks */,
 				FF98CA0A25D4EB78002C08A8 /* Resources */,
+				3B7103AB4D0E5F50D6D6435D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,12 +253,58 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF98CA1C25D4EB7A002C08A8 /* LaunchScreen.storyboard in Resources */,
+				FFB2D71225D507D5008BD97E /* Wemakeprice-SemiBold.ttf in Resources */,
 				FF98CA1925D4EB7A002C08A8 /* Assets.xcassets in Resources */,
+				FFB2D71425D507D5008BD97E /* Wemakeprice-Bold.ttf in Resources */,
+				FFB2D73F25D582FF008BD97E /* logo.gif in Resources */,
+				FFB2D71325D507D5008BD97E /* Wemakeprice-Regular.ttf in Resources */,
 				FF98CA1725D4EB78002C08A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B7103AB4D0E5F50D6D6435D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GIOS/Pods-GIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GIOS/Pods-GIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GIOS/Pods-GIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ABE9A32C567CA9516675294 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF98CA0825D4EB78002C08A8 /* Sources */ = {
@@ -170,8 +312,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF98CA1025D4EB78002C08A8 /* AppDelegate.swift in Sources */,
+				FFB2D71D25D52B1D008BD97E /* SignViewController.swift in Sources */,
+				FFB2D6C825D4F441008BD97E /* CustomColor.swift in Sources */,
+				FFB2D71725D507EC008BD97E /* CustomFont.swift in Sources */,
+				FFB2D72125D52D0E008BD97E /* CustomButton.swift in Sources */,
 				FF98CA3025D4ED1D002C08A8 /* MenuViewController.swift in Sources */,
 				FF98CA1225D4EB78002C08A8 /* SceneDelegate.swift in Sources */,
+				FFB2D72425D54887008BD97E /* CustomLabel.swift in Sources */,
+				FFB2D72725D54BAF008BD97E /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +463,7 @@
 		};
 		FF98CA2125D4EB7A002C08A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F98E9EE8845CB93582987AA8 /* Pods-GIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -328,12 +477,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeong.GIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		FF98CA2225D4EB7A002C08A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F4989262DD02F549DBEDF82 /* Pods-GIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -347,7 +497,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeong.GIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
