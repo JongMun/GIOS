@@ -56,15 +56,47 @@
 		FF98CA0E25D4EB78002C08A8 /* GIOS */ = {
 			isa = PBXGroup;
 			children = (
+				FF98CA2825D4EB99002C08A8 /* Extension */,
+				FF98CA2625D4EB90002C08A8 /* Model */,
+				FF98CA2725D4EB95002C08A8 /* View */,
+				FF98CA2425D4EB85002C08A8 /* Controller */,
 				FF98CA0F25D4EB78002C08A8 /* AppDelegate.swift */,
 				FF98CA1125D4EB78002C08A8 /* SceneDelegate.swift */,
-				FF98CA1325D4EB78002C08A8 /* ViewController.swift */,
-				FF98CA1525D4EB78002C08A8 /* Main.storyboard */,
 				FF98CA1825D4EB7A002C08A8 /* Assets.xcassets */,
-				FF98CA1A25D4EB7A002C08A8 /* LaunchScreen.storyboard */,
 				FF98CA1D25D4EB7A002C08A8 /* Info.plist */,
 			);
 			path = GIOS;
+			sourceTree = "<group>";
+		};
+		FF98CA2425D4EB85002C08A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF98CA1325D4EB78002C08A8 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF98CA2625D4EB90002C08A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF98CA2725D4EB95002C08A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF98CA1A25D4EB7A002C08A8 /* LaunchScreen.storyboard */,
+				FF98CA1525D4EB78002C08A8 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF98CA2825D4EB99002C08A8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
