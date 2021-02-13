@@ -32,7 +32,7 @@ class SignViewController: UIViewController {
         self.passwdField.placeholder = "비밀번호를 입력해주세요."
         self.signInButton.setTitle("로그인", for: .normal)
         self.snsSignInButton.setTitle("SNS 로그인", for: .normal)
-        self.signUpButton.setTitle("회원가입", for: .normal)
+        self.signUpButton.setTitle("일반회원가입", for: .normal)
         self.resetPWButton.setTitle("비밀번호 찾기", for: .normal)
         self.returnMenuButton.setTitle("돌아가기", for: .normal)
     }

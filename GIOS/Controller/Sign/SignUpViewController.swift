@@ -7,9 +7,6 @@
 
 import UIKit
 import Firebase
-import FirebaseUI
-import GoogleSignIn
-import AuthenticationServices
 
 class SignUpViewController: UIViewController {
     
@@ -26,9 +23,6 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        GIDSignIn.sharedInstance()?.presentingViewController = self
-        GIDSignIn.sharedInstance().delegate = self
-        
         setDisplayUI()
         buttonEvent()
     }
@@ -38,25 +32,12 @@ class SignUpViewController: UIViewController {
         self.emailField.placeholder = "Email을 입력해주세요."
         self.passwdField.placeholder = "비밀번호를 입력해주세요."
         self.signUpButton.setTitle("회원가입", for: .normal)
-        self.googleSignUpButton.setTitle("구글로 회원가입", for: .normal)
-        self.appleSignUpButton.setTitle("애플로 회원가입", for: .normal)
-//        self.signUpButton.setTitle("회원가입", for: .normal)
-//        self.resetPWButton.setTitle("비밀번호 찾기", for: .normal)
         self.returnMenuButton.setTitle("돌아가기", for: .normal)
-        
-//        self.view.addSubview(google)
-//        self.google.topAnchor.constraint(equalTo: returnMenuButton.topAnchor, constant: 30)
-//        
-//        self.googleSignUpButton = A
     }
     
     func buttonEvent() {
         self.signUpButton.addTarget(self, action: #selector(signUpButtonAction), for: .touchUpInside)
-        self.googleSignUpButton.addTarget(self, action: #selector(googleSignUpAction), for: .touchUpInside)
-        self.appleSignUpButton.addTarget(self, action: #selector(appleSignUpAction), for: .touchUpInside)
         self.returnMenuButton.addTarget(self, action: #selector(returnMenuButtonAction), for: .touchUpInside)
-//        self.resetPWButton.addTarget(self, action: #selector(resetPWButtonAction), for: .touchUpInside)
-//        self.returnMenuButton.addTarget(self, action: #selector(returnMenuButtonAction), for: .touchUpInside)
     }
 }
 
@@ -96,24 +77,35 @@ extension SignUpViewController {
     }
     
     @objc func signUpButtonAction(_ sender: UIButton) {
-
-    }
-    
-    @objc func googleSignUpAction(_ sender: UIButton) {
-        GIDSignIn.sharedInstance().signIn()
+        guard let email = self.emailField.text, email.isEmpty == false else {
+            self.view.messageShow(self, message: "이메일을 확인해주세요.")
+            self.emailField.becomeFirstResponder()
+            return
+        }
         
-        // Sign Out
-        GIDSignIn.sharedInstance()?.signOut()
-    }
-    
-    @objc func appleSignUpAction(_ sender: UIButton) {
-        let provider = ASAuthorizationAppleIDProvider()
-        let request = provider.createRequest()
-        request.requestedScopes = [.fullName, .email]
+        guard let passwd = self.passwdField.text, passwd.isEmpty == false else {
+            self.passwdField.becomeFirstResponder()
+            self.view.messageShow(self, message: "비밀번호를 확인해주세요.")
+            return
+        }
         
-        let controller = ASAuthorizationController(authorizationRequests: [request])
-        controller.delegate = self
-        controller.performRequests()
+        Auth.auth().createUser(withEmail: email, password: passwd) {
+            ( result, error ) in
+            if let error = error {
+                print("Create User Error : \(error.localizedDescription)")
+                return
+            }
+            self.view.messageShow(self, message: "가입이 완료되었습니다.")
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+                do {
+                    try Auth.auth().signOut()
+                } catch let error as NSError {
+                    print("Sign Out Error : \(error)")
+                }
+                self.dismiss(animated: true, completion: nil)
+            })
+        }
     }
     
     @objc func returnMenuButtonAction(_ sender: UIButton) {
@@ -125,86 +117,3 @@ extension SignUpViewController {
         self.view.endEditing(true)
     }
 }
-
-// Google Sign In
-extension SignUpViewController: GIDSignInDelegate {
-    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
-        // 계정 연결 해제
-    }
-    
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        if let error = error {
-          print("\(error.localizedDescription)")
-          return
-        }
-        
-        guard let authentication = user.authentication else { return }
-        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
-        
-        Auth.auth().signIn(with: credential) {
-            (authResult, error) in
-            if let error = error {
-                print("Firebase Sign in error : \(error.localizedDescription)")
-            } else {
-                if let result = authResult {
-                    self.userEmail = result.user.email
-//                    print("UserEmail : \(result.user.email)")
-                    self.dismiss(animated: true, completion: nil)
-                }
-            }
-        }
-    }
-}
-
-// Apple Sign In
-extension SignUpViewController: ASAuthorizationControllerDelegate {
-    func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
-        if let credential = authorization.credential as? ASAuthorizationAppleIDCredential {
-            if let tokenData = credential.identityToken, let tokenString = String(data: tokenData, encoding: .utf8) {
-                let newCredential = OAuthProvider.credential(withProviderID: "apple.com", idToken: tokenString, rawNonce: .none)
-                
-                Auth.auth().signIn(with: newCredential) {
-                    ( result, error ) in
-                    if let error = error {
-                        print("Firebase Sign in error : \(error.localizedDescription)")
-                    } else {
-                        if let result = result {
-                            self.userEmail = result.user.email
-//                            print("UserEmail : \(result.user.email)")
-                            self.dismiss(animated: true, completion: nil)
-                        }
-                    }
-                }
-            } else {
-                print("Token Disabled")
-            }
-            
-        }
-    }
-    
-    func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
-        print("Error in Sign in width Apple  : \(error.localizedDescription)")
-    }
-    
-    func getCredentialState(userid: String) {
-        let provider = ASAuthorizationAppleIDProvider()
-        provider.getCredentialState(forUserID: userid) {
-            ( state, _ ) in
-            switch state {
-            case .authorized:
-                print("Authorized")
-                break
-            case .revoked:
-                print("Revoked")
-                break
-            case .notFound:
-                print("NotFound")
-                break
-            default:
-                print("Default")
-                break
-            }
-        }
-    }
-}
-
