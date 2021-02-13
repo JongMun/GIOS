@@ -18,5 +18,20 @@ target 'GIOS' do
   pod 'Then'
   pod 'ObjectMapper', '~> 3.5'
   pod 'SwiftyGif'
-
+  
+  # add pods for desired Firebase products
+  # https://firebase.google.com/docs/ios/setup#available-pods
+  pod 'FirebaseUI'
+  pod 'FirebaseUI/Auth'
+  pod 'FirebaseUI/Google'
+  pod 'FirebaseUI/Facebook'
+  pod 'FirebaseUI/OAuth' # Used for Sign in with Apple, Twitter, etc
+  pod 'FirebaseUI/Phone'
+  
+  # Firebase Login
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  
+  # SNS Login
+  pod 'GoogleSignIn'
 end

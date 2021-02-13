@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5F83FFD65025083D96BD7813 /* Pods_GIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A8907BFAA4D317DBCAAEFB /* Pods_GIOS.framework */; };
+		FF7589B425D65B480081703F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF7589B325D65B480081703F /* GoogleService-Info.plist */; };
+		FF758A2025D6676B0081703F /* ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF758A1F25D6676B0081703F /* ToastMessage.swift */; };
+		FF758A2425D667EA0081703F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF758A2325D667EA0081703F /* SignUpViewController.swift */; };
+		FF758A2725D668610081703F /* SNSSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF758A2625D668610081703F /* SNSSignInViewController.swift */; };
+		FF758A2B25D668DA0081703F /* ResetPwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF758A2A25D668DA0081703F /* ResetPwViewController.swift */; };
 		FF98CA1025D4EB78002C08A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98CA0F25D4EB78002C08A8 /* AppDelegate.swift */; };
 		FF98CA1225D4EB78002C08A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98CA1125D4EB78002C08A8 /* SceneDelegate.swift */; };
 		FF98CA1725D4EB78002C08A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF98CA1525D4EB78002C08A8 /* Main.storyboard */; };
@@ -30,6 +35,12 @@
 		9F4989262DD02F549DBEDF82 /* Pods-GIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIOS.release.xcconfig"; path = "Target Support Files/Pods-GIOS/Pods-GIOS.release.xcconfig"; sourceTree = "<group>"; };
 		E4A8907BFAA4D317DBCAAEFB /* Pods_GIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F98E9EE8845CB93582987AA8 /* Pods-GIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIOS.debug.xcconfig"; path = "Target Support Files/Pods-GIOS/Pods-GIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FF7589B325D65B480081703F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FF758A1F25D6676B0081703F /* ToastMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastMessage.swift; sourceTree = "<group>"; };
+		FF758A2325D667EA0081703F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FF758A2625D668610081703F /* SNSSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSSignInViewController.swift; sourceTree = "<group>"; };
+		FF758A2A25D668DA0081703F /* ResetPwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPwViewController.swift; sourceTree = "<group>"; };
+		FF758BA125D8086E0081703F /* GIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GIOS.entitlements; sourceTree = "<group>"; };
 		FF98CA0C25D4EB78002C08A8 /* GIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF98CA0F25D4EB78002C08A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF98CA1125D4EB78002C08A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +90,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FF758A1E25D667560081703F /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				FF758A1F25D6676B0081703F /* ToastMessage.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
 		FF98CA0325D4EB78002C08A8 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +119,7 @@
 		FF98CA0E25D4EB78002C08A8 /* GIOS */ = {
 			isa = PBXGroup;
 			children = (
+				FF758BA125D8086E0081703F /* GIOS.entitlements */,
 				FFB2D74225D584E7008BD97E /* GIF */,
 				FF98CA2825D4EB99002C08A8 /* Extension */,
 				FF98CA2625D4EB90002C08A8 /* Model */,
@@ -108,6 +128,7 @@
 				FF98CA0F25D4EB78002C08A8 /* AppDelegate.swift */,
 				FF98CA1125D4EB78002C08A8 /* SceneDelegate.swift */,
 				FF98CA1825D4EB7A002C08A8 /* Assets.xcassets */,
+				FF7589B325D65B480081703F /* GoogleService-Info.plist */,
 				FF98CA1D25D4EB7A002C08A8 /* Info.plist */,
 			);
 			path = GIOS;
@@ -141,6 +162,7 @@
 		FF98CA2825D4EB99002C08A8 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FF758A1E25D667560081703F /* Toast */,
 				FFB2D70E25D5079F008BD97E /* Font */,
 				FFB2D70D25D50793008BD97E /* UI */,
 			);
@@ -181,6 +203,9 @@
 			isa = PBXGroup;
 			children = (
 				FFB2D71C25D52B1D008BD97E /* SignViewController.swift */,
+				FF758A2325D667EA0081703F /* SignUpViewController.swift */,
+				FF758A2625D668610081703F /* SNSSignInViewController.swift */,
+				FF758A2A25D668DA0081703F /* ResetPwViewController.swift */,
 			);
 			path = Sign;
 			sourceTree = "<group>";
@@ -205,6 +230,7 @@
 				FF98CA0925D4EB78002C08A8 /* Frameworks */,
 				FF98CA0A25D4EB78002C08A8 /* Resources */,
 				3B7103AB4D0E5F50D6D6435D /* [CP] Embed Pods Frameworks */,
+				9EDC64A28FEC07852F92D97C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF98CA1C25D4EB7A002C08A8 /* LaunchScreen.storyboard in Resources */,
+				FF7589B425D65B480081703F /* GoogleService-Info.plist in Resources */,
 				FFB2D71225D507D5008BD97E /* Wemakeprice-SemiBold.ttf in Resources */,
 				FF98CA1925D4EB7A002C08A8 /* Assets.xcassets in Resources */,
 				FFB2D71425D507D5008BD97E /* Wemakeprice-Bold.ttf in Resources */,
@@ -304,6 +331,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9EDC64A28FEC07852F92D97C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GIOS/Pods-GIOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GIOS/Pods-GIOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GIOS/Pods-GIOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -311,14 +355,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF758A2425D667EA0081703F /* SignUpViewController.swift in Sources */,
 				FF98CA1025D4EB78002C08A8 /* AppDelegate.swift in Sources */,
 				FFB2D71D25D52B1D008BD97E /* SignViewController.swift in Sources */,
 				FFB2D6C825D4F441008BD97E /* CustomColor.swift in Sources */,
+				FF758A2025D6676B0081703F /* ToastMessage.swift in Sources */,
 				FFB2D71725D507EC008BD97E /* CustomFont.swift in Sources */,
 				FFB2D72125D52D0E008BD97E /* CustomButton.swift in Sources */,
+				FF758A2B25D668DA0081703F /* ResetPwViewController.swift in Sources */,
 				FF98CA3025D4ED1D002C08A8 /* MenuViewController.swift in Sources */,
 				FF98CA1225D4EB78002C08A8 /* SceneDelegate.swift in Sources */,
 				FFB2D72425D54887008BD97E /* CustomLabel.swift in Sources */,
+				FF758A2725D668610081703F /* SNSSignInViewController.swift in Sources */,
 				FFB2D72725D54BAF008BD97E /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GIOS/GIOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TQ3U3269X7;
 				INFOPLIST_FILE = GIOS/Info.plist;
@@ -487,6 +536,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GIOS/GIOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TQ3U3269X7;
 				INFOPLIST_FILE = GIOS/Info.plist;
