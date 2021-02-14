@@ -45,7 +45,7 @@ extension ResetPwViewController {
         Auth.auth().sendPasswordReset(withEmail: email) {
             ( error ) in
             if let error = error {
-                print("sendPasswordReset : \(error)")
+                print("SendPasswordReset : \(error)")
                 return
             }
             

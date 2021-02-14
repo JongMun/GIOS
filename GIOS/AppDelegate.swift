@@ -21,9 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Google Sign
         GIDSignIn.sharedInstance()?.clientID = "95881396417-j7mbt3bf63f7e7dr2oh991edtf390cfa.apps.googleusercontent.com"
         
-        // Apple Sign
-        
-        
         // Override point for customization after application launch.
         return true
     }

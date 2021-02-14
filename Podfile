@@ -34,4 +34,7 @@ target 'GIOS' do
   
   # SNS Login
   pod 'GoogleSignIn'
+  
+  pod 'FacebookLogin'
+  
 end

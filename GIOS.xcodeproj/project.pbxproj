@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5F83FFD65025083D96BD7813 /* Pods_GIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A8907BFAA4D317DBCAAEFB /* Pods_GIOS.framework */; };
+		FF6051AF25D8D32500CA9F23 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6051AE25D8D32500CA9F23 /* CameraController.swift */; };
+		FF6051B225D8D34100CA9F23 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6051B125D8D34100CA9F23 /* CameraViewController.swift */; };
 		FF7589B425D65B480081703F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF7589B325D65B480081703F /* GoogleService-Info.plist */; };
 		FF758A2025D6676B0081703F /* ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF758A1F25D6676B0081703F /* ToastMessage.swift */; };
 		FF758A2425D667EA0081703F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF758A2325D667EA0081703F /* SignUpViewController.swift */; };
@@ -35,6 +37,8 @@
 		9F4989262DD02F549DBEDF82 /* Pods-GIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIOS.release.xcconfig"; path = "Target Support Files/Pods-GIOS/Pods-GIOS.release.xcconfig"; sourceTree = "<group>"; };
 		E4A8907BFAA4D317DBCAAEFB /* Pods_GIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F98E9EE8845CB93582987AA8 /* Pods-GIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIOS.debug.xcconfig"; path = "Target Support Files/Pods-GIOS/Pods-GIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FF6051AE25D8D32500CA9F23 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		FF6051B125D8D34100CA9F23 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		FF7589B325D65B480081703F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FF758A1F25D6676B0081703F /* ToastMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastMessage.swift; sourceTree = "<group>"; };
 		FF758A2325D667EA0081703F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +102,15 @@
 			path = Toast;
 			sourceTree = "<group>";
 		};
+		FF935CC125D8CF9D006AEFC0 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				FF6051B125D8D34100CA9F23 /* CameraViewController.swift */,
+				FF6051AE25D8D32500CA9F23 /* CameraController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		FF98CA0325D4EB78002C08A8 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +152,7 @@
 			children = (
 				FFB2D71A25D52AEC008BD97E /* Main */,
 				FFB2D71B25D52AFA008BD97E /* Sign */,
+				FF935CC125D8CF9D006AEFC0 /* Camera */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -357,6 +371,7 @@
 			files = (
 				FF758A2425D667EA0081703F /* SignUpViewController.swift in Sources */,
 				FF98CA1025D4EB78002C08A8 /* AppDelegate.swift in Sources */,
+				FF6051AF25D8D32500CA9F23 /* CameraController.swift in Sources */,
 				FFB2D71D25D52B1D008BD97E /* SignViewController.swift in Sources */,
 				FFB2D6C825D4F441008BD97E /* CustomColor.swift in Sources */,
 				FF758A2025D6676B0081703F /* ToastMessage.swift in Sources */,
@@ -365,6 +380,7 @@
 				FF758A2B25D668DA0081703F /* ResetPwViewController.swift in Sources */,
 				FF98CA3025D4ED1D002C08A8 /* MenuViewController.swift in Sources */,
 				FF98CA1225D4EB78002C08A8 /* SceneDelegate.swift in Sources */,
+				FF6051B225D8D34100CA9F23 /* CameraViewController.swift in Sources */,
 				FFB2D72425D54887008BD97E /* CustomLabel.swift in Sources */,
 				FF758A2725D668610081703F /* SNSSignInViewController.swift in Sources */,
 				FFB2D72725D54BAF008BD97E /* CustomTextField.swift in Sources */,
