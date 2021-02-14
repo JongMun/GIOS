@@ -22,6 +22,9 @@ enum CustomColorEnum {
     
     // Text in Button
     case textInButton
+    
+    // Camera Shuter
+    case shutterButtonColor
 }
 
 extension UIColor {
@@ -39,6 +42,8 @@ extension UIColor {
             return UIColor(hex: "#474747")
         case .textInButton:
             return UIColor(hex: "#FFFFFF")
+        case .shutterButtonColor:
+            return UIColor.init(displayP3Red: 204/255, green: 102/255, blue: 240/255, alpha: 1)
         }
     }
 }
