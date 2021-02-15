@@ -104,7 +104,7 @@ extension SignViewController {
             return
         }
         self.emailField.text = ""
-        self.emailField.text = ""
+        self.passwdField.text = ""
 //        print("Page : \(storyboardId)")
         self.present(vc, animated: true, completion: nil)
     }

@@ -15,7 +15,7 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var albumButton: UIButton!
     @IBOutlet weak var weatherButton: UIButton!
-    @IBOutlet weak var chatButton: UIButton!
+    @IBOutlet weak var mapButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class MenuViewController: UIViewController {
         self.cameraButton.setTitle("Camera", for: .normal)
         self.albumButton.setTitle("Album", for: .normal)
         self.weatherButton.setTitle("Weather", for: .normal)
-        self.chatButton.setTitle("Chatting", for: .normal)
+        self.mapButton.setTitle("Map", for: .normal)
     }
     
     func setGIFLogo() {

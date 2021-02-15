@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5F83FFD65025083D96BD7813 /* Pods_GIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A8907BFAA4D317DBCAAEFB /* Pods_GIOS.framework */; };
+		FF57590525DA984000D826B9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF57590425DA984000D826B9 /* MapViewController.swift */; };
 		FF6051AF25D8D32500CA9F23 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6051AE25D8D32500CA9F23 /* CameraController.swift */; };
 		FF6051B225D8D34100CA9F23 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6051B125D8D34100CA9F23 /* CameraViewController.swift */; };
 		FF6051B925D9521B00CA9F23 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6051B825D9521A00CA9F23 /* AlbumViewController.swift */; };
@@ -38,6 +39,7 @@
 		9F4989262DD02F549DBEDF82 /* Pods-GIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIOS.release.xcconfig"; path = "Target Support Files/Pods-GIOS/Pods-GIOS.release.xcconfig"; sourceTree = "<group>"; };
 		E4A8907BFAA4D317DBCAAEFB /* Pods_GIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F98E9EE8845CB93582987AA8 /* Pods-GIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIOS.debug.xcconfig"; path = "Target Support Files/Pods-GIOS/Pods-GIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FF57590425DA984000D826B9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FF6051AE25D8D32500CA9F23 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		FF6051B125D8D34100CA9F23 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		FF6051B825D9521A00CA9F23 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,14 @@
 				9F4989262DD02F549DBEDF82 /* Pods-GIOS.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF57590325DA980700D826B9 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				FF57590425DA984000D826B9 /* MapViewController.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		FF6051B725D951FE00CA9F23 /* Album */ = {
@@ -164,6 +174,7 @@
 				FFB2D71B25D52AFA008BD97E /* Sign */,
 				FF935CC125D8CF9D006AEFC0 /* Camera */,
 				FF6051B725D951FE00CA9F23 /* Album */,
+				FF57590325DA980700D826B9 /* Map */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -396,6 +407,7 @@
 				FFB2D72425D54887008BD97E /* CustomLabel.swift in Sources */,
 				FF758A2725D668610081703F /* SNSSignInViewController.swift in Sources */,
 				FFB2D72725D54BAF008BD97E /* CustomTextField.swift in Sources */,
+				FF57590525DA984000D826B9 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

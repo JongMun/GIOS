@@ -12,14 +12,24 @@ class AlbumViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     @IBOutlet weak var largeImageView: UIImageView!
     @IBOutlet weak var photoCollectionView: UICollectionView!
+    @IBOutlet weak var returnButton: UIButton!
     
     var imageArray = [UIImage]()
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.returnButton.setTitle("돌아가기", for: .normal)
+        self.returnButton.addTarget(self, action: #selector(returnButtonAction), for: .touchUpInside)
+        
         photoCollectionView.delegate = self
         photoCollectionView.dataSource = self
         setCollectionViewLayout()
         getPhotos()
+    }
+    
+    @objc func returnButtonAction(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
